@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Finexo </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              INVESTIGACION DE OPERACIONES
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">METODO SIMPLEX</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">ARBOL DE EXPANSION MINIMA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">COSTO MINIMO</a>
+              </li>
+
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Arbol de Expansión
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+
+          <div class="detail-box">
+            <h5>
+              ¿Qué es un árbol de expansión mínimo?
+            </h5>
+            <p>
+              Un árbol de expansión mínimo es un tipo especial de árbol que minimiza las longitudes (o «pesos») de los
+              bordes del árbol. Un ejemplo es una compañía de cable que quiere tender línea a múltiples vecindarios; al
+              minimizar la cantidad de cable tendido, la compañía de cable ahorrará dinero.
+              Un árbol tiene un camino que une dos vértices cualesquiera. Un árbol de expansión de un gráfico es un
+              árbol que:
+            </p>
+            <br />
+            <ul>
+              <li>Contiene todos los vértices del gráfico original.</li>
+              <li>Alcanza (abarca) todos los vértices.</li>
+              <li>es acíclico . En otras palabras, el gráfico no tiene ningún nodo que vuelva a sí mismo.</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <img src="images/arb1.png" alt="" width="400" height="400" />
+          </div>
+          <p>
+            Incluso los gráficos más simples pueden contener muchos árboles de expansión. Por ejemplo, el siguiente
+            gráfico:
+          </p>
+          <br />
+          <div class="detail-box">
+            <img src="images/arb2.png" alt="" width="200" height="200" />
+          </div>
+          <br />
+          <p>tiene muchas posibilidades para los árboles de expansión, que incluyen:</p>
+          <br />
+          <div class="detail-box">
+            <img src="images/arb3.png" alt="" width="400" height="400" />
+          </div>
+        </div>
+        <div class="box">
+
+          <div class="detail-box">
+            <h5>
+              Encontrar árboles de expansión mínimos
+            </h5>
+            <p>
+              Como probablemente puedas imaginar, los gráficos más grandes tienen más nodos y muchas más posibilidades
+              para los subgráficos. La cantidad de subgráficos puede llegar rápidamente a millones o miles de millones,
+              lo que hace que sea muy difícil (ya veces imposible) encontrar el árbol de expansión mínimo. Además, los
+              largos suelen tener distintos pesos; a un borde de 5 m de largo se le puede dar un peso de 5, a otro de la
+              misma longitud se le puede dar un peso de 7.
+
+              Algunos algoritmos populares para encontrar esta distancia mínima incluyen: el algoritmo de Kruskal, el
+              algoritmo de Prim y el algoritmo de Boruvka . Estos funcionan para árboles de expansión simples. Para
+              gráficos más complejos, probablemente necesitarás usar software.
+            </p>
+            <br/>
+            <h5>
+              Ejemplo del algoritmo de Kruskal
+            </h5>
+            <p>
+              Encuentra el borde con el menor peso y resáltalo. Para este gráfico de ejemplo, he resaltado el borde
+              superior (de A a C) en rojo. Tiene el peso más bajo (de 1): Encuentre el siguiente borde con el peso más
+              bajo y resáltelo: Continúe seleccionando los bordes más bajos hasta que todos los nodos estén en el mismo
+              árbol. Notas :
+            </p>
+            <div class="detail-box">
+              <img src="images/arb4.png" alt="" width="600" height="300" />
+            </div>
+            <br/>
+            <ol class="align-content-start">
+              <li>Si tiene más de un borde con el mismo peso, elija</li>
+              <li>Tenga cuidado de no completar un ciclo (enrutar un nodo de vuelta a sí mismo). Si su elección completa un ciclo, descarte su elección y pase al siguiente peso más grande.</li>
+            </ol>
+            <p>El árbol de expansión mínimo terminado para este ejemplo se ve así:</p>
+            <br/>
+            <div class="detail-box">
+              <img src="images/arb5.png" alt="" width="400" height="200" />
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <h5>
+              ¿Qué es el algoritmo de Prim?
+            </h5>
+            <br/>
+            <p>
+              El algoritmo de Prim es una forma de encontrar un árbol de expansión mínimo (MST).
+            </p>
+            <br/>
+            <div class="detail-box">
+              <img src="images/arb5.png" alt="" width="400" height="200" />
+            </div>
+            <p>
+              Un árbol de expansión mínima (mostrado en rojo) minimiza los bordes (pesos) de un árbol.
+            </p>
+            <br/>
+            <h5>
+              Cómo ejecutar el algoritmo de Prim
+            </h5>
+            <ol>
+              <li>elige un nodo aleatorio y resáltalo. Para este ejemplo, elijo el nodo C.</li>
+              <li>encuentre todos los bordes que van a los nodos no resaltados. Para este ejemplo, el nodo C tiene tres bordes con pesos 1, 2 y 3. Resalte el borde con el peso más bajo. Para este ejemplo, eso es 1.</li>
+              <li>Resalte el nodo que acaba de alcanzar (en este ejemplo, ese es el nodo A).</li>
+              <br/>
+              <div class="detail-box">
+                <img src="images/arb6.png" alt="" width="500" height="250" />
+              </div>
+              <br/>
+              <li> mire todos los nodos resaltados hasta ahora (en este ejemplo, son A y C). Resalte el borde con el peso más bajo (en este ejemplo, ese es el borde con peso 2). Nota : si tiene más de un borde con el mismo peso, elija uno al azar.</li>
+              <li>Resalte el nodo que acaba de alcanzar.</li>
+              <br/>
+              <div class="detail-box">
+                <img src="images/arb7.png" alt="" width="400" height="200" />
+              </div>
+              <br/>
+              <li>
+                Resalte el borde con el peso más bajo. Elija entre todos los bordes que:
+                <ul>
+                  <li>Procede de todos los nodos resaltados.</li>
+                  <li>Llega a un nodo que aún no has resaltado</li>
+                </ul>
+              </li>
+              <li>Repita los pasos 5 y 6 hasta que no tenga más nodos sin resaltar. Para este ejemplo en particular, los pasos específicos restantes son:
+                <ul>
+                  <li>una. Resalte el nodo E.</li>
+                  <li>b. Resalte el borde 3 y luego el nodo D.</li>
+                  <li>C. Resalte el borde 5 y luego el nodo B.</li>
+                  <li>d. Resalte el borde 6 y luego el nodo F.</li>
+                  <li>mi. Resalte el borde 9 y luego el nodo G.</li>
+                  <li></li>
+                </ul>
+              </li>
+            </ol>
+
+            <p>El gráfico terminado se muestra en la parte inferior derecha de esta imagen:</p>
+            <div class="detail-box">
+              <img src="images/arb8.png" alt="" width="600" height="300" />
+            </div>
+
+
+          </div>
+        </div>
+        <br/>
+        <div class="box">
+         
+          <div class="detail-box">
+            <h5>
+              Aplicaciones de la vida real
+            </h5>
+            <p>
+              Los árboles de expansión mínimos se utilizan para diseños de redes (es decir, redes telefónicas o de cable). También se utilizan para encontrar soluciones aproximadas para problemas matemáticos complejos como el problema del viajante de comercio .Los árboles de expansión mínimos se utilizan para diseños de redes (es decir, redes telefónicas o de cable). También se utilizan para encontrar soluciones aproximadas para problemas matemáticos complejos como el problema del viajante de comercio .
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Mi Contacto
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Ciudad Guatemala
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Llamar al +501 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  ydonisr@miumg.edu.gt
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
